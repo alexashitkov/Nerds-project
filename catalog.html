@@ -5,14 +5,14 @@
     <title>Catalog</title>
 </head>
 <body>
-    <header class="header grai">
+    <header class="header gray">
         <a href=""><img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
         <nav class="nav">
             <ul>
-                <li>Студия</li>
-                <li>Клиенты</li>
-                <li>Магазин</li>   
-                <li>Контакты</li>
+                <li class="list-activ"> <a href=""></a> Студия</li>
+                <li class="list-activ"> <a href=""></a> Клиенты</li>
+                <li class="list-activ"> <a href=""></a> Магазин</li>   
+                <li class="list-activ"> <a href=""></a> Контакты</li>
                 <li class="basket"><a href=""> <img class="logo" src="img\cart-icon.png" height="15" width="15" alt="Корзина"></a>Корзина</li>
             </ul>
         </nav>
@@ -24,11 +24,11 @@
                 <div class="filter">
                     <h4>Стоимость:</h4>
                     <div class="filter-group">
-                        <input class="grai" type="range" >
+                        <input class="gray" type="range" >
                         <label for="">от</label>
-                        <input class="grai" type="text" min="0" placeholder="0">
+                        <input class="gray" type="text" min="0" placeholder="0">
                         <label for="">до</label>
-                        <input class="grai" type="text" max="50000" placeholder="50000">
+                        <input class="gray" type="text" max="50000" placeholder="50000">
                     </div>      
                 </div>
                 <div class="filter">
@@ -69,22 +69,22 @@
                         <input type="checkbox">
                     </div>
                 </div>
-                <button class="btn grai" type="submit">Показать</button>
+                <button class="btn gray" type="submit">Показать</button>
             </form>
         </aside>    
         <div class="main-item catalog">
-            <div class="breadcrumbs">
+            <div class="sort">
                 <h3>Сортировать:</h3>
                 <nav>
                     <ul>
                         <li>
-                            <a class="breadcrumbs-item price" href="">По цене</a>
+                            <a class="price" href="">По цене</a>
                         </li>
                         <li>
-                            <a class="breadcrumbs-item type" href="">По типу</a>
+                            <a class="type" href="">По типу</a>
                         </li>
                          <li>
-                            <a class="breadcrumbs-item name" href="">По названию</a>
+                            <a class="name" href="">По названию</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,6 +93,8 @@
             </div>
             <div class="catalog">
                 <section class="catalog-item sedona">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-sedona.jpg" height="576" width="360" alt="sedona">
                     <div class="popup">
                         <h3>Sedona</h3>
@@ -101,6 +103,8 @@
                     </div>
                 </section>
                 <section class="catalog-item pink">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-pink.jpg" height="576" width="360" alt="pink">
                     <div class="popup">
                         <h3>Pink</h3>
@@ -109,6 +113,8 @@
                     </div>
                 </section> 
                 <section class="catalog-item barbershop">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-barbershop.jpg" height="576" width="360" alt="barbershop">
                     <div class="popup">
                          <h3>Barbershop</h3>
@@ -117,6 +123,8 @@
                     </div>
                 </section>    
                 <section class="catalog-item mishka">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-mishka.jpg" height="576" width="360" alt="mishka">
                     <div class="popup">
                         <h3>Mishka</h3>
@@ -125,6 +133,8 @@
                     </div>
                 </section>
                 <section class="catalog-item apius">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-apius.jpg" height="576" width="360" alt="apius">
                     <div class="popup">
                         <h3>Apius</h3>
@@ -133,6 +143,8 @@
                     </div>
                 </section>
                 <section class="catalog-item kvast">
+                    <div class="browser-activ browser-off">
+                    </div>
                     <img class="images" src="picth\img-kvast.jpg" height="576" width="360" alt="kvast">
                     <div class="popup">
                         <h3>Kvast</h3>
@@ -143,10 +155,10 @@
             </div> 
             <div class="pagination">
                 <ul>
-                    <li><a class="btn grai" href="">1</a></li>
-                    <li><a class="btn grai" href="">2</a></li>
-                    <li><a class="btn grai" href="">3</a></li>
-                    <li><a class="btn grai" href="">Следующая</a></li>
+                    <li><a class="btn gray activ" href="">1</a></li>
+                    <li><a class="btn gray activ" href="">2</a></li>
+                    <li><a class="btn gray activ" href="">3</a></li>
+                    <li><a class="btn gray activ" href="">Следующая</a></li>
                 </ul>
             </div>   
         </div>
@@ -158,6 +170,17 @@
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
                 <button class="btn btn-red">Напишите нам</button>
             </div>
+            <form class="form-popup">
+                <h3>Напишите нам</h3>
+                <img src="img\close-cross.png" width="21" height="21" alt="Закрыть">
+                <label for="">Ваше имя:</label>
+                <input type="text" placeholder="Представтесь, пожалуйста">
+                <label for="">Ваш e-mail:</label>
+                <input type="e-mail" placeholder="Для отправки ответа">
+                <label for="">Текст письма:</label>
+                <input type="textaria" placeholder="В свободной форме">
+                <button class="btn btn-red">Отправить</button>
+            </form>
         </div>       
     </div>
     <footer class="footer">
