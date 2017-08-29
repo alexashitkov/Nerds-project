@@ -9,31 +9,49 @@
         <a href=""> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
         <nav class="nav">
             <ul>
-                <li class="list-activ"><a href=""></a> Студия</li>
-                <li class="list-activ"><a href=""></a> Клиенты</li>
-                <li class="list-activ"><a href=""></a> Магазин</li>   
-                <li class="list-activ"><a href=""></a> Контакты</li>
+                <li class="list-active"><a href=""></a> Студия</li>
+                <li class="list-active"><a href=""></a> Клиенты</li>
+                <li class="list-active"><a href=""></a> Магазин</li>   
+                <li class="list-active"><a href=""></a> Контакты</li>
                 <li class="basket"> <a href=""> <img class="logo" src="img\cart-icon.png" height="15" width="15" alt="Корзина"></a> Корзина</li>
             </ul>
         </nav>
         <div class="slider">
-            <section class="slider-item">
+            <section class="slider-item slide1">
+                <a name="phone"></a>   
                 <h1>Долго, дорого, скурпулёзно.</h1>
                 <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 <button class="btn btn-red">Узнать больше</button>
                 <img src="picth\slide1.jpg" height="413" width="698" alt="Изображение телефона">
+                <div class="link"> <!--Кнопки -->
+                    <a class="link-active" href="#phone"></a>
+                    <a class="link-active" href="#desktop"></a>
+                    <a class="link-active" href="#tablet"></a>
+                </div>
             </section>
-            <section class="slider-item">
+            <section class="slider-item slide2">
+                <a name="desktop"></a>
                 <h1>Любим математику как никто другой</h1>
                 <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
-                <button class="btn btn-green">Узнать больше</button>
+                <button class="btn btn-red">Узнать больше</button>
                 <img src="picth\slide2.jpg" height="430" width="663" alt="Изображение монитора">
+                <div class="link"> <!--Кнопки -->
+                    <a class="link-active" href="#phone"></a>
+                    <a class="link-active" href="#desktop"></a>
+                    <a class="link-active" href="#tablet"></a>
+                </div>
             </section>
-            <section class="slider-item">
+            <section class="slider-item slide3">
+                <a name="tablet"></a>
                 <h1>Только ночь, только хардкор</h1>
                 <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <button class="btn btn-yellow">Узнать больше</button>
-                 <img src="picth\slide3.jpg" height="411" width="759" alt="Изображение планшета">
+                <button class="btn btn-red">Узнать больше</button>
+                <img src="picth\slide3.jpg" height="411" width="759" alt="Изображение планшета">
+                <div class="link"> <!--Кнопки -->
+                    <a class="link-active" href="#phone"></a>
+                    <a class="link-active" href="#desktop"></a>
+                    <a class="link-active" href="#tablet"></a>
+                </div>
             </section>           
         </div>
     </header>
@@ -64,9 +82,21 @@
                 <p>Исповедуем принцип минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <ul>
                     <h4>Выполняем заказы на разработку:</h4>
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильных приложений для IOS и Android</li>
-                    <li>Слайдшоу и видео для корпоративных презентаций </li>
+                    <li>
+                        <div class="red stripe"> <!--Красная полоса -->
+                        </div>
+                        Веб-сайтов любой сложности
+                    </li>
+                    <li>
+                        <div class="red stripe"> <!--Красная полоса -->
+                        </div>
+                        Мобильных приложений для IOS и Android
+                    </li>
+                    <li>
+                        <div class="red stripe"> <!--Красная полоса -->
+                        </div>    
+                        Слайдшоу и видео для корпоративных презентаций 
+                    </li>
                 </ul>
             </div>
             <div class="warranty">
@@ -93,9 +123,10 @@
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
-                <button class="btn btn-red">Напишите нам</button>
+                <a class="btn btn-red" href="#modal" >Напишите нам</a>
             </div>
-            <form class="form-popup">
+            <form class="form-popup"><!--Модальное окно -->
+                <a name="modal"></a> 
                 <h3>Напишите нам</h3>
                 <img src="img\close-cross.png" width="21" height="21" alt="Закрыть">
                 <label for="">Ваше имя:</label>
