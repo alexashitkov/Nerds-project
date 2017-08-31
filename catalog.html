@@ -6,147 +6,150 @@
 </head>
 <body>
     <header class="header gray">
-        <a href=""><img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
+        <a href="index.html"><img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
         <nav class="nav">
             <ul>
-                <li class="list-activ"> <a href=""></a> Студия</li>
-                <li class="list-activ"> <a href=""></a> Клиенты</li>
-                <li class="list-activ"> <a href=""></a> Магазин</li>   
-                <li class="list-activ"> <a href=""></a> Контакты</li>
+                <li class="list"> <a href=""></a> Студия</li>
+                <li class="list"> <a href=""></a> Клиенты</li>
+                <li class="list active"> <a href="Nerds-project\catalog.html"></a> Магазин</li>   
+                <li class="list"> <a href=""></a> Контакты</li>
                 <li class="basket"><a href=""> <img class="logo" src="img\cart-icon.png" height="15" width="15" alt="Корзина"></a>Корзина</li>
             </ul>
         </nav>
         <h1>Магазин готовых шаблонов</h1>
     </header>
     <div class="main">
+        <div class="wrapper">
         <aside class="main-item form-page">
             <form action="">
                 <div class="filter">
                     <h4>Стоимость:</h4>
                     <div class="filter-group">
                         <input class="gray" type="range" >
-                        <label for="">от</label>
-                        <input class="gray" type="text" min="0" placeholder="0">
-                        <label for="">до</label>
-                        <input class="gray" type="text" max="50000" placeholder="50000">
+                        <label for="min">от</label>
+                        <input id="min" class="gray" type="text" min="0" placeholder="0">
+                        <label for="max">до</label>
+                        <input  id="max" class="gray" type="text" max="50000" placeholder="50000">
                     </div>      
                 </div>
                 <div class="filter">
                     <h4>Сетка:</h4>
                     <div class="filter-group">
-                        <label for="">Адаптивная</label>
-                        <input type="radio">
+                        <input  id="adaptive" type="radio">
+                        <label for="adaptive">Адаптивная</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">Фиксированная</label>
-                        <input type="radio">
+                        <input id="fixed" type="radio">
+                        <label for="fixed">Фиксированная</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">Резиновая</label>
-                        <input type="radio">
+                        <input id="rubber" type="radio">
+                        <label for="rubber">Резиновая</label>
                     </div>
                 </div>
                 <div class="filter">
                     <h4>Особенности:</h4>
                     <div class="filter-group">
-                        <label for="">Слайдер</label>
-                        <input type="checkbox">
+                        <input id="slide" type="checkbox">
+                        <label for="slide">Слайдер</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">Блок преимуществ</label>
-                        <input type="checkbox">
+                        <input id="advantages" type="checkbox">
+                        <label for="advantages">Блок преимуществ</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">Новости</label>
-                        <input type="checkbox">
+                        <input id="news" type="checkbox">
+                        <label for="news">Новости</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">галерея</label>
-                        <input type="checkbox">
+                        <input id="gallery" type="checkbox">
+                        <label for="gallery">галерея</label>
                     </div>
                     <div class="filter-group">
-                        <label for="">Корзина</label>
-                        <input type="checkbox">
+                        <input id="hamper" type="checkbox">
+                        <label for="hamper">Корзина</label>
                     </div>
                 </div>
                 <button class="btn gray" type="submit">Показать</button>
             </form>
         </aside>    
-        <div class="main-item catalog">
+        <div class="main-item selector">
             <div class="sort">
                 <h3>Сортировать:</h3>
-                <nav>
+                <nav class="sort-control">
                     <ul>
                         <li>
-                            <a class="price" href="">По цене</a>
+                            <button class="active">По цене</button>
                         </li>
-                        <li>
-                            <a class="type" href="">По типу</a>
+                        <li>    
+                            <button>По типу</button>
                         </li>
                          <li>
-                            <a class="name" href="">По названию</a>
+                            <button>По названию</button>
                         </li>
                     </ul>
                 </nav>
-                <a href=""><img src="img\icon-doun-dir.png"  width="10" height="11" alt="Вниз"></a>
-                <a href=""><img src="img\icon-up-dir.png" width="10" height="11" alt="Вверх"></a>
+                <div class="sort-icon">
+                    <button class="active"><img src="img\icon-doun-dir.png"  width="10" height="11" alt="Вниз"></button>
+                    <button><img src="img\icon-up-dir.png" width="10" height="11" alt="Вверх"></button>
+                </div>     
             </div>
             <div class="catalog">
                 <section class="catalog-item sedona">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#sedona"><img class="images" src="picth\img-sedona.jpg" height="576" width="360" alt="sedona"></a>
-                    <div class="popup">
+                    <div class="hidden">
                         <h3>Sedona</h3>
                         <p>Информационный сайт для туристов</p>
                         <a class="btn btn-red" name="sedona" href="">9 900 руб</a>
                     </div>
                 </section>
                 <section class="catalog-item pink">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#pink"><img class="images" src="picth\img-pink.jpg" height="576" width="360" alt="pink"></a>
-                    <div class="popup">
+                    <div class="hidden">
                         <h3>Pink App</h3>
                         <p>Продуктовый лендинг приложения для IOS и Android</p>
                         <a class="btn btn-red" href="">9 900 руб</a>
                     </div>
                 </section> 
                 <section class="catalog-item barbershop">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#barbershop"><img class="images" src="picth\img-barbershop.jpg" height="576" width="360" alt="barbershop"></a>
-                    <div class="popup">
+                    <div class="hidden">
                          <h3>Barbershop</h3>
                         <p>Сайт салоны красоты. Для мужчин, да.</p>
                         <a class="btn btn-red" href="">9 900 руб</a>
                     </div>
                 </section>    
                 <section class="catalog-item mishka">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#mishka"><img class="images" src="picth\img-mishka.jpg" height="576" width="360" alt="mishka"></a>
-                    <div class="popup">
+                    <div class="hidden">
                         <h3>Mishka</h3>
                         <p>Интернет-магазин вязаных игрущек.</p>
                         <a class="btn btn-red" href="">9 900 руб</a>
                     </div>
                 </section>
                 <section class="catalog-item aplus">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#aplus"><img class="images" src="picth\img-aplus.jpg" height="576" width="360" alt="aplus"></a>
-                    <div class="popup">
+                    <div class="hidden">
                         <h3>Aplus</h3>
                         <p>Лендинг курсов повышения квалификации</p>
                         <a class="btn btn-red" href="">9 900 руб</a>
                     </div>
                 </section>
                 <section class="catalog-item kvast">
-                    <div class="browser-activ browser-off">
+                    <div class="browser">
                     </div>
                     <a href="#kvast"><img class="images" src="picth\img-kvast.jpg" height="576" width="360" alt="kvast"></a>
-                    <div class="popup">
+                    <div class="hidden">
                         <h3>Кваст</h3>
                         <p>Промо-сайт производителя крафтового кваса</p>
                         <a class="btn btn-red" href="">9 900 руб</a>
@@ -156,34 +159,21 @@
             <div class="pagination">
                 <ul>
                     <li><a class="btn gray activ" href="">1</a></li>
-                    <li><a class="btn gray activ" href="">2</a></li>
-                    <li><a class="btn gray activ" href="">3</a></li>
-                    <li><a class="btn gray activ" href="">Следующая</a></li>
+                    <li><a class="btn gray" href="">2</a></li>
+                    <li><a class="btn gray" href="">3</a></li>
+                    <li><a class="btn gray" href="">Следующая</a></li>
                 </ul>
             </div>   
         </div>
+        </div>
         <div class="main-item scheme">
-            <a href="">
             <img class="map" height="785" width="1440" src="picth\map.jpg" alt="Местоположение в г.Санкт-Петербурга">
-            </a>
             <div class="address">
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
                 <a class="btn btn-red" href="#modal" >Напишите нам</a>
             </div>
-            <form class="form-popup"><!--Модальное окно -->
-                <a name="modal"></a>
-                <h3>Напишите нам</h3>
-                <img src="img\close-cross.png" width="21" height="21" alt="Закрыть">
-                <label for="">Ваше имя:</label>
-                <input type="text" placeholder="Представтесь, пожалуйста">
-                <label for="">Ваш e-mail:</label>
-                <input type="e-mail" placeholder="Для отправки ответа">
-                <label for="">Текст письма:</label>
-                <input type="textaria" placeholder="В свободной форме">
-                <button class="btn btn-red">Отправить</button>
-            </form>
         </div>       
     </div>
     <footer class="footer">
@@ -197,5 +187,18 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+    <form class="form-hidden"><!--Модальное окно -->
+        <a name="modal"></a>
+        <h3>Напишите нам</h3>
+        <div class="filter-group">
+        <label for="">Ваше имя:</label>
+        <input type="text" placeholder="Представтесь, пожалуйста">
+        <label for="">Ваш e-mail:</label>
+        <input type="e-mail" placeholder="Для отправки ответа">
+        <label for="">Текст письма:</label>
+        <input type="textaria" placeholder="В свободной форме">
+        </div>
+        <button class="btn btn-red">Отправить</button>
+    </form>
 </body>
 </html>

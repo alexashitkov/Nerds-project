@@ -6,13 +6,13 @@
 </head>
 <body>
     <header class="header gray">
-        <a href=""> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
+        <a href="index.html"> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
         <nav class="nav">
             <ul>
-                <li class="list-active"><a href=""></a> Студия</li>
-                <li class="list-active"><a href=""></a> Клиенты</li>
-                <li class="list-active"><a href=""></a> Магазин</li>   
-                <li class="list-active"><a href=""></a> Контакты</li>
+                <li class="list"><a href=""></a> Студия</li>
+                <li class="list"><a href=""></a> Клиенты</li>
+                <li class="list"><a href="catalog.html"></a> Магазин</li>   
+                <li class="list"><a href=""></a> Контакты</li>
                 <li class="basket"> <a href=""> <img class="logo" src="img\cart-icon.png" height="15" width="15" alt="Корзина"></a> Корзина</li>
             </ul>
         </nav>
@@ -24,9 +24,9 @@
                 <button class="btn btn-red">Узнать больше</button>
                 <img src="picth\slide1.jpg" height="413" width="698" alt="Изображение телефона">
                 <div class="link"> <!--Кнопки -->
-                    <a class="link-active" href="#phone"></a>
-                    <a class="link-active" href="#desktop"></a>
-                    <a class="link-active" href="#tablet"></a>
+                    <a class="link active" href="#phone"></a>
+                    <a class="link" href="#desktop"></a>
+                    <a class="link" href="#tablet"></a>
                 </div>
             </section>
             <section class="slider-item slide2">
@@ -36,9 +36,9 @@
                 <button class="btn btn-red">Узнать больше</button>
                 <img src="picth\slide2.jpg" height="430" width="663" alt="Изображение монитора">
                 <div class="link"> <!--Кнопки -->
-                    <a class="link-active" href="#phone"></a>
-                    <a class="link-active" href="#desktop"></a>
-                    <a class="link-active" href="#tablet"></a>
+                    <a class="link" href="#phone"></a>
+                    <a class="link active" href="#desktop"></a>
+                    <a class="link" href="#tablet"></a>
                 </div>
             </section>
             <section class="slider-item slide3">
@@ -48,14 +48,15 @@
                 <button class="btn btn-red">Узнать больше</button>
                 <img src="picth\slide3.jpg" height="411" width="759" alt="Изображение планшета">
                 <div class="link"> <!--Кнопки -->
-                    <a class="link-active" href="#phone"></a>
-                    <a class="link-active" href="#desktop"></a>
-                    <a class="link-active" href="#tablet"></a>
+                    <a class="link" href="#phone"></a>
+                    <a class="link" href="#desktop"></a>
+                    <a class="link active" href="#tablet"></a>
                 </div>
             </section>           
         </div>
     </header>
     <div class="main">
+      <div class="wrapper">
         <div class="main-item creation">
             <section class="websites">
                 <img src="picth\ilustration-1.jpg" height="146" width="300" alt="Веб сайты">
@@ -115,29 +116,16 @@
             <img  class="work" src="img\logo-3.png" height="52" width="185" alt="">
             <img  class="work" src="img\logo-4.png" height="84" width="173" alt="">
         </div>
-        <div class="main-item scheme">
-            <a href="">
-                <img class="map" height="785" width="1440" src="picth\map.jpg" alt="Местоположение в г.Санкт-Петербурга">
-            </a>
+      </div>
+      <div class="main-item scheme">
+            <img class="map" height="785" width="1440" src="picth\map.jpg" alt="Местоположение в г.Санкт-Петербурга">
             <div class="address">
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
                 <a class="btn btn-red" href="#modal" >Напишите нам</a>
             </div>
-            <form class="form-popup"><!--Модальное окно -->
-                <a name="modal"></a> 
-                <h3>Напишите нам</h3>
-                <img src="img\close-cross.png" width="21" height="21" alt="Закрыть">
-                <label for="">Ваше имя:</label>
-                <input type="text" placeholder="Представтесь, пожалуйста">
-                <label for="">Ваш e-mail:</label>
-                <input type="e-mail" placeholder="Для отправки ответа">
-                <label for="">Текст письма:</label>
-                <input type="textaria" placeholder="В свободной форме">
-                <button class="btn btn-red">Отправить</button>
-            </form>
-        </div>       
+      </div>       
     </div>
     <footer class="footer">
         <div class="footer-social">
@@ -150,7 +138,19 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-
+    <form class="form-hidden"><!--Модальное окно -->
+        <a name="modal"></a>
+        <h3>Напишите нам</h3>
+        <div class="filter-group">
+        <label for="">Ваше имя:</label>
+        <input type="text" placeholder="Представтесь, пожалуйста">
+        <label for="">Ваш e-mail:</label>
+        <input type="e-mail" placeholder="Для отправки ответа">
+        <label for="">Текст письма:</label>
+        <input type="textaria" placeholder="В свободной форме">
+        </div>
+        <button class="btn btn-red">Отправить</button>
+    </form>
 
 </body>
 </html>   
