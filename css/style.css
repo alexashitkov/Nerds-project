@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+.header {
+    border:  2px solid red;
+}
+
+.basket, .list {
+    display: inline-block;
+    list-style-type: none;
+    
+    margin-right: 40px;
+}
+
+.nav {
+   float: right; 
+}
+
+.slider {
+    clear: both;
+}
+
+.slider-item img {
+    display: inline-block;
+    float: right;
+}
+
+.slider-item h1, p, button {
+    float: left;
+    display: block;
+
+    }
+
+.slider-item h1 {
+    padding-top: 40px;
+    padding-right: 800px;
+    } 
+    
+.slider-item p {
+    padding-top: 30px;
+    padding-right: 800px;
+}     
+
+.main {
+    clear: both; 
+}
+
+.main-item {
+    border: 2px solid green;
+}
+
+.websites {
+    width: 1000px;
+    height: 200px;
+    
+}
+
+.creation {
+    margin: 20px 40px;
+    width: 300px;
+    height: 146px;
+
+}
+
+.application {
+    
+    width: 300px;
+    height: 146px;
+}
