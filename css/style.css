@@ -499,7 +499,7 @@ a .logo {
   float: right;
   margin-top: 20px;
   margin-right: 21px;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 .slider-item h1 {
@@ -675,7 +675,7 @@ a .logo {
   width: 319px;
   background: #ffffff;
   padding-left: 50px;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 .address h4 {
