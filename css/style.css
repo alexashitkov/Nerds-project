@@ -502,13 +502,21 @@ a .logo {
   outline: 1px solid red;
 }
 
-.slider-item h1 {
+.slider-item h1 {  
   padding-top: 65px;
+  width: 376px;
 }
 
-.slide2 img,
-.slide3 img {
-  margin-right: 0;  
+.slide1  h1{
+  width: 376px;
+}
+
+.slide2 h1 {
+  width: 515px;  
+}
+
+.slide3 h1 {
+  width: 408px;
 }
 
 .slider-item p{
