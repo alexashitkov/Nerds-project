@@ -462,9 +462,7 @@ body {
 .header {
     background: #eeeeee;
     overflow: hidden;
-    /*margin: 0;
-    padding: 0;*/
-}
+}  
 
 a .logo {
   float: left;
@@ -501,6 +499,7 @@ a .logo {
   float: right;
   margin-top: 20px;
   margin-right: 21px;
+  border: 1px solid red;
 }
 
 .slider-item h1 {
@@ -527,7 +526,7 @@ a .logo {
   overflow: hidden;
   width: 90px;
   padding-right: 676px;
-  padding-bottom: 96px;
+  
 }
 
 .link {
