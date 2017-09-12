@@ -20,11 +20,11 @@
         </nav>
         <div class="slider">
             <section class="slider-item slide1">
-                <a name="phone"></a>   
-                <h1>Долго, дорого, скурпулёзно.</h1>
+                <a name="phone"></a>
+                <img src="picth\slide1.jpg" height="413" width="698" alt="Изображение телефона">   
+                <h1>Долго, дорого, скрупулёзно.</h1>
                 <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 <button class="btn btn-red">Узнать больше</button>
-                <img src="picth\slide1.jpg" height="413" width="698" alt="Изображение телефона">
                 <div class="links"> <!--Кнопки -->
                     <a class="link active" href="#phone"></a>
                     <a class="link" href="#desktop"></a>
@@ -33,11 +33,11 @@
             </section>
             <section class="slider-item slide2">
                 <a name="desktop"></a>
+                <img src="picth\slide2.jpg" height="430" width="663" alt="Изображение монитора">
                 <h1>Любим математику как никто другой</h1>
                 <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
                 <button class="btn btn-red">Узнать больше</button>
-                <img src="picth\slide2.jpg" height="430" width="663" alt="Изображение монитора">
-                <div class="link"> <!--Кнопки -->
+                <div class="links"> <!--Кнопки -->
                     <a class="link" href="#phone"></a>
                     <a class="link active" href="#desktop"></a>
                     <a class="link" href="#tablet"></a>
@@ -45,11 +45,11 @@
             </section>
             <section class="slider-item slide3">
                 <a name="tablet"></a>
+                <img src="picth\slide3.jpg" height="411" width="759" alt="Изображение планшета">
                 <h1>Только ночь, только хардкор</h1>
                 <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 <button class="btn btn-red">Узнать больше</button>
-                <img src="picth\slide3.jpg" height="411" width="759" alt="Изображение планшета">
-                <div class="link"> <!--Кнопки -->
+                <div class="links"> <!--Кнопки -->
                     <a class="link" href="#phone"></a>
                     <a class="link" href="#desktop"></a>
                     <a class="link active" href="#tablet"></a>
@@ -83,20 +83,20 @@
             <div class="desc">
                 <h2>Мы- маленькая, но гордая дизайн-студия из Краснодара.</h2>
                 <p>Исповедуем принцип минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <ul>
-                    <h4>Выполняем заказы на разработку:</h4>
+                <h4>Выполняем заказы на разработку:</h4>
+                <ul> 
                     <li>
-                        <div class="red stripe"> <!--Красная полоса -->
+                        <div class="red-stripe"> <!--Красная полоса--> 
                         </div>
                         Веб-сайтов любой сложности
                     </li>
                     <li>
-                        <div class="red stripe"> <!--Красная полоса -->
+                        <div class="red-stripe"> <!--Красная полоса -->
                         </div>
                         Мобильных приложений для IOS и Android
                     </li>
                     <li>
-                        <div class="red stripe"> <!--Красная полоса -->
+                        <div class="red-stripe"> <!--Красная полоса -->
                         </div>    
                         Слайдшоу и видео для корпоративных презентаций 
                     </li>
@@ -104,11 +104,14 @@
             </div>
             <div class="warranty">
                 <img class="logo" src="img\nerds-ilustration.png" height="208" width="360" alt="Логотип">
-                <ul>
-                    <h4>С 2004 года любим точность во всём:</h4>
-                    <li><span>146<sup>%</sup></span>Уровень самоотдачи</li>
-                    <li><span>100<sup>%</sup></span>Соблюдение сроков</li>
-                    <li><span>50<sup>%</sup></span>Минимальния предоплата</li>
+                <h4>С 2004 года любим точность во всём:</h4>
+                <ul>    
+                    <li><span>146<sup>%</sup></span>
+                        Уровень самоотдачи</li>
+                    <li><span>100<sup>%</sup></span>
+                        Соблюдение сроков</li>
+                    <li><span>50<sup>%</sup></span>
+                        Минимальная предоплата</li>
                 </ul>
             </div>
         </div>
@@ -125,7 +128,7 @@
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
-                <a class="btn btn-red" href="#modal" >Напишите нам</a>
+                <button class="btn btn-red" href="#modal" >Напишите нам</button>
             </div>
       </div>       
     </div>
@@ -142,14 +145,21 @@
     </footer>
     <form class="form-hidden"><!--Модальное окно -->
         <a name="modal"></a>
+        <button class="close"></button>
         <h3>Напишите нам</h3>
         <div class="filter-group">
-        <label for="">Ваше имя:</label>
-        <input type="text" placeholder="Представтесь, пожалуйста">
-        <label for="">Ваш e-mail:</label>
-        <input type="e-mail" placeholder="Для отправки ответа">
-        <label for="">Текст письма:</label>
-        <input type="textaria" placeholder="В свободной форме">
+            <div class="your-name">
+                <label for="">Ваше имя:</label>    
+                <input type="text" placeholder="Представтесь, пожалуйста">
+            </div>
+            <div class="mail">
+                <label for="">Ваш e-mail:</label>
+                <input type="e-mail" placeholder="Для отправки ответа">
+            </div>
+            <div class="letter">
+                <label for="">Текст письма:</label>
+                <input type="textaria" placeholder="В свободной форме">
+            </div>
         </div>
         <button class="btn btn-red">Отправить</button>
     </form>
