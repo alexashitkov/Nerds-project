@@ -462,7 +462,7 @@ body {
 .header {
     background: #eeeeee;
     overflow: hidden;
-}  
+}
 
 a .logo {
   float: left;
@@ -504,7 +504,6 @@ a .logo {
 
 .slider-item h1 {  
   padding-top: 65px;
-  width: 376px;
 }
 
 .slide1  h1{
@@ -736,8 +735,8 @@ a .logo {
 
 .form-hidden {
   overflow: hidden;
-  width: 1034px;
-  height: 664px;
+  width: 1039px;
+  height: 669px;
   padding-left: 100px;
   background: #ffffff;
   border: 1px solid red;
