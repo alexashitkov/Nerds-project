@@ -8,22 +8,24 @@
 </head>
 <body>
     <header class="header gray">
-        <a href="index.html"> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
-        <nav class="nav">
-            <ul>
-                <li class="list"><a href=""></a> Студия</li>
-                <li class="list"><a href=""></a> Клиенты</li>
-                <li class="list"><a href="catalog.html"></a> Магазин</li>   
-                <li class="list"><a href=""></a> Контакты</li>
-                <li class="basket"> <a href=""> <img src="img\cart-icon.png" height="15" width="15" alt="Корзина"></a> Корзина</li>
-            </ul>
-        </nav>
+        <div class="top-menu clearfix">
+            <a href="index.html"> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
+            <nav class="nav">
+                <ul>
+                    <li class="list active"><a href="index.html">Студия</a></li>
+                    <li class="list"><a href="">Клиенты</a></li>
+                    <li class="list"><a href="catalog.html">Магазин</a></li>   
+                    <li class="list"><a href="">Контакты</a></li>
+                    <li class="basket"> <a href=""> <img src="img\cart-icon.png" height="15" width="15" alt="Корзина">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="slider">
-            <section class="slider-item slide1">
+            <section class="slider-item slide1 clearfix">
                 <a name="phone"></a>
-                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона">   
+                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона"> 
                 <h1>Долго, дорого, скрупулёзно.</h1>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                 <button class="btn btn-red">Узнать больше</button>
                 <div class="links"> <!--Кнопки -->
                     <a class="link active" href="#phone"></a>
@@ -31,7 +33,7 @@
                     <a class="link" href="#tablet"></a>
                 </div>
             </section>
-            <section class="slider-item slide2">
+            <section class="slider-item slide2 clearfix">
                 <a name="desktop"></a>
                 <img src="picth\slide2.png" height="430" width="663" alt="Изображение монитора">
                 <h1>Любим математику как никто другой</h1>
@@ -43,7 +45,7 @@
                     <a class="link" href="#tablet"></a>
                 </div>
             </section>
-            <section class="slider-item slide3">
+            <section class="slider-item slide3 clearfix">
                 <a name="tablet"></a>
                 <img src="picth\slide3.png" height="411" width="759" alt="Изображение планшета">
                 <h1>Только ночь, только хардкор</h1>
@@ -59,7 +61,7 @@
     </header>
     <div class="main">
       <div class="wrapper">
-        <div class="main-item creation">
+        <div class="main-item creation clearfix">
             <section class="websites">
                 <img src="picth\ilustration-1.jpg" height="146" width="300" alt="Веб сайты">
                 <h3>Веб-сайты</h3>
@@ -79,7 +81,7 @@
                 <button class="btn btn-yellow">Заказать</button>
             </section>
         </div>
-        <div class="main-item opportunities">
+        <div class="main-item opportunities clearfix">
             <div class="desc">
                 <h2>Мы- маленькая, но гордая дизайн-студия из Краснодара.</h2>
                 <p>Исповедуем принцип минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -123,7 +125,9 @@
         </div>
       </div>
       <div class="main-item scheme">
-            <img class="map" height="785" width="1440" src="picth\map.jpg" alt="Местоположение в г.Санкт-Петербурга">
+            <div class="map">
+                <img  height="785" width="1440" src="picth\map.jpg" alt="Местоположение в г.Санкт-Петербурга"> 
+            </div>           
             <div class="address">
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
@@ -132,7 +136,7 @@
             </div>
       </div>       
     </div>
-    <footer class="footer">
+    <footer class="footer clearfix">
         <div class="footer-social">
             <a href=""><img class="social-btn social-btn-vk" src="img\vk-icon.png" height="" width="" alt="Иконка VK"></a>
             <a href=""><img class="social-btn social-btn-fb" src="img\fb-icon.png" height="" width="" alt="Иконка FB"></a>
@@ -143,11 +147,11 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <form class="form-hidden"><!--Модальное окно -->
+    <form class="form-hidden clearfix"><!--Модальное окно -->
         <a name="modal"></a>
         <button class="close"></button>
         <h3>Напишите нам</h3>
-        <div class="filter-group">
+        <div class="form-group">
             <div class="your-name">
                 <label for="">Ваше имя:</label>    
                 <input type="text" placeholder="Представтесь, пожалуйста">

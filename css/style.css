@@ -446,43 +446,77 @@
     display: none;
   }
 
-  html {
-    box-sizing: border-box;
-  }
+
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    max-width: 1440px;
+    box-sizing: border-box;
+    width: 1440px;
     /*font-size: 16px;
     font-weight: ;
     line-height: calc();
     font-style:
     color: #;*/ 
 }
+
+.clearfix::after { 
+  content: '';
+  clear: both; 
+  display: table;
+}
 .header {
-    background: #eeeeee;
-    overflow: hidden;
+  min-height: 355px;
+  outline: 1px solid red;
+  background: #eeeeee;
+  padding-left: 140px;
+  padding-right: 140px;  
 }
 
-a .logo {
+.header h1 {
+  margin-left: 219px;
+  margin-bottom: 116px;
+}
+
+.top-menu .logo {
   float: left;
-  margin: 49px 200px 18px 140px; 
+  margin-top: 49px;
+  margin-right: 200px;
+}
+
+.top-menu .nav {
+  float: left;
+  margin-top: 83px;
+
+}
+
+.nav ul {
+  font-size: 0;
+  margin-bottom: 18px; 
+  margin: 0;
+  padding: 0;
 }
 
 .nav li{
-  float: left;
-  list-style: none;
-  margin-top: 83px;
+  display: inline-block;
   margin-right: 40px;
 }
 
-.nav li:nth-child(4) {
-  margin-right: 0;
-}  
+li.active,
+.list a:hover {
+  border-bottom: 2px solid red; 
+}
+
+.nav a {
+  text-decoration: none; 
+}
 
 .basket {
-  margin-right: 140px;
-  margin-left: 185px;
+   margin-left: 270px;
+}
+
+.nav .basket,
+.nav li:nth-child(4) {
+  margin-right: 0;
 }
 
 .basket img {
@@ -490,49 +524,78 @@ a .logo {
 }
 
 .slider-item {
-  clear: both;
-  margin-left: 140px;
-  overflow: hidden;
+  outline: 1px solid green;
+  padding: 0;
+  position: relative;
 }
 
 .slider-item img {
   float: right;
-  margin-top: 20px;
-  margin-right: 21px;
-  outline: 1px solid red;
 }
 
-.slider-item h1 {  
-  padding-top: 65px;
-}
-
-.slide1  h1{
-  width: 376px;
-}
-
-.slide2 h1 {
-  width: 515px;  
-}
-
-.slide3 h1 {
-  width: 408px;
-}
-
-.slider-item p{
-  padding-top: 10px;
-  width: 400px;
+.slider-item h1 {
   margin-bottom: 30px;
 }
 
+.slider-item p {
+  margin-bottom: 40px;
+}
+
 .slider-item .btn-red {
+  display: block;
   width: 240px;
   height: 50px;
+  margin-bottom: 80px;
+}
+
+.slide1 img {
+   margin-right: 31px;
+}
+
+.slide2 img {
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+}
+
+.slide3 img {
+  position: absolute;
+  right: 0;
+  
+}
+
+.slide1 h1 {
+  padding-top: 67px;
+  width: 420px;  
+}
+
+.slide2 h1 {
+  padding-top: 81px;
+  width: 520px;    
+}
+
+.slide3 h1 {
+  padding-top: 66px;
+  width: 410px;
+}
+
+.slide1 p {
+  width: 400px;
+}
+
+.slide2 p {
+  width: 410px;
+}
+
+.slide3 p {
+  width: 350px;
 }
 
 .links {
-  overflow: hidden;
-  width: 90px;
-  padding-right: 676px;
+  width: 110px;
+  position: absolute;
+  right: 536px;
+  bottom: 96px;
   
 }
 
@@ -541,8 +604,8 @@ a .logo {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #EBDF06;
-  margin-right: 15px;
+  background: #F7F6F4;
+  margin-right: 17px;
 }
 
 .link:last-child {
@@ -550,67 +613,60 @@ a .logo {
 }
 
 .wrapper {
-  overflow: hidden;
-  margin-top: 80px;
-  margin-left: 140px;
+  padding-left: 140px;
 }
 
-.wrapper p {
-  width: 250px;
-}
-
-.main-item section {
+.websites,
+.application,
+.presentation {
   float: left;
-}
-
-.websites, .application {
   margin-right: 100px;
+  margin-top: 80px;
 }
 
-.main-item h3 {
-  margin-top: 30px;
+.presentation {
+  margin-right: 0;
 }
 
-.main-item p {
-  margin-top: 26px;
+.creation p {
+  width: 250px;
+  margin-top: 20px;
 }
 
-.main-item .btn {
+.creation .btn {
   width: 160px;
   height: 50px;
-  margin-bottom: 80px;
+}
+
+.creation {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .opportunities {
-  clear: both;
-  overflow: hidden;
-  margin-top: 80px;
-  padding-bottom: 80px;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
-.desc {
+.desc,
+.warranty {
   float: left;
-  margin-top: 80px;
 }
 
 .desc h2 {
   width: 650px;
+  margin-top: 80px;
 }
 
-  
 .desc p {
-  width: 630px;
+  width: 650px;
 }
 
-.desc li {
-  list-style: none;
-  padding-bottom: 25px;
-  margin-left: -40px;
+.desc ul {
+  margin: 0;
+  padding: 0;
 }
 
-.opportunities .red-stripe {
+.desc .red-stripe {
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -618,23 +674,30 @@ a .logo {
   margin-bottom: 4px;
 }
 
-.warranty {
-  float: left;
-  margin-left: 100px;
-  margin-top: 42px;
-  overflow: hidden;
+.desc li {
+  list-style: none;
+  padding-bottom: 25px;
 }
 
-.warranty img,
+.warranty {
+  margin-left: 110px;
+  margin-top: 42px;
+}
+
 .warranty h4 {
-  padding-left: 10px;
+  padding-left: 12px;
+}
+
+.warranty ul {
+  margin: 0;
+  padding: 0;
 }
 
 .warranty li {
   list-style: none;
   float: left;
   width: 105px;
-  margin-right: 9px;
+  margin-right: 13px;
   
 }
 
@@ -649,24 +712,25 @@ a .logo {
 
 .development {
   display: inline-block;
-  clear: both;
-  height: 180px;
-  margin: 80px auto;
-  border-bottom: 2px solid #eeeeee;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
-.development img {
+.work {
   padding-right: 50px;
   padding-left: 50px;
   border-right: 2px solid #eeeeee;
 }
 
-.development img:last-child {
+.work:last-child {
   padding-right: 0;
   border-right: none;
 }
 
-.development img:first-child {
+.work:first-child {
   padding-left: 0;
 }
 
@@ -674,8 +738,196 @@ a .logo {
   margin-bottom: 20px;
 }
 
-.scheme { /* Позиционирование окна*/
-  
+.form,
+.selector {
+  float: left;
+  /*margin-top: 60px;*/
+}
+
+.form {
+  margin-right: 140px;
+  width: 260px;
+}
+
+.filter-group input.gray {
+  width: 260px;
+  height: 80px;
+  display: inline-block;
+}
+
+.maxi,
+.mini {
+  float: left;
+  margin-top: 20px;
+}
+
+.mini input {
+  width: 75px;
+  margin-right: 33px;
+  height: 40px;
+}
+
+.mini label,
+.maxi label {
+  padding-right: 8px;
+}
+
+.maxi input {
+  width: 80px;
+  height: 40px;
+}
+
+.filter h4 {
+  padding-top: 55px;
+  margin-bottom: 50px;
+}
+
+.filter-group {
+  margin-top: 20px;
+}
+
+.form .btn-gray {
+  width: 260px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.selector {
+  width: 760px;
+  margin-top: 60px;
+}
+
+.sort h4,
+.sort-control,
+.sort-icon  button {
+  float: left;
+}
+
+.sort h4 {
+  padding: 0;
+  margin: 0;
+  margin-right: 265px;
+}
+
+.sort-icon {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.sort-icon button {
+  margin-right: 20px;
+}
+
+.sort-icon button:last-child {
+  margin-right: 0;
+}
+
+/*.sort-control {
+  padding: 0;
+  margin: 0;
+}
+
+.sort-control li {
+  list-style: none;
+}*/
+
+.catalog {
+  font-size: 0;
+  width: 760px;
+  margin-top: 60px;
+}
+
+.catalog-item {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.hidden {
+  width: 360px;
+  height: 231px;
+}
+
+.hidden h3 {
+  display: inline-block;
+  padding-top: 35px;
+}
+
+.hidden p {
+  width: 200px;
+}
+
+.hidden .btn-red {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+.browser {
+  width: 360px;
+  height: 40px;
+  background: #eeeeee;
+  border-radius: 4px 4px 0 0;
+}
+
+.round {
+  float: left;
+  margin-left: 8px;
+  margin-top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.pagination {
+  /*margin-top: 60px;*/
+  margin-bottom: 60px;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  list-style: none;
+  float: left;
+}
+
+.page-gray {
+  display: inline-block;  
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  text-align: center;
+  background: #eeeeee;
+}
+
+ .next {
+  width: 260px;
+  margin-right: 0;
+}
+
+.pagination .active {
+  background: white;
+  border: 2px solid #eeeeee;
+}
+
+
+.scheme {
+  position: relative;
+}
+
+.map {
+  height: 415px;
+  overflow: auto;
 }
 
 .address {
@@ -683,6 +935,9 @@ a .logo {
   background: #ffffff;
   padding-left: 50px;
   outline: 1px solid red;
+  position: absolute;
+  left: 140px;
+  bottom: 50px;
 }
 
 .address h4 {
@@ -702,10 +957,6 @@ a .logo {
   margin-bottom: 45px;
   width: 219px;
   height: 50px;
-}
-
-.footer {
-  overflow: hidden;
 }
 
 .footer-social {
@@ -734,12 +985,11 @@ a .logo {
 }
 
 .form-hidden {
-  overflow: hidden;
   width: 1039px;
   height: 669px;
   padding-left: 100px;
   background: #ffffff;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 .close {
@@ -756,7 +1006,7 @@ a .logo {
   clear: both;
 }
 
-.filter-group {
+.form-group {
   overflow: hidden;
 }
 
@@ -777,7 +1027,7 @@ a .logo {
   
 }
 
-.filter-group input {
+.form-group input {
   width: 360px;
   height: 50px;
   margin-top: 15px;
@@ -794,7 +1044,7 @@ a .logo {
 .form-hidden .btn-red {
   width: 260px;
   height: 50px;
-}
+} 
 
 .main,
 .footer
@@ -814,7 +1064,8 @@ a .logo {
     background: #efc84a;
 }
 
-.basket, .list {
+.basket a,
+.list a {
     font-size: 16px;
     font-weight: 500;
     line-height: calc(30px/16px);
@@ -955,7 +1206,7 @@ a .logo {
     color: #202020;
 }
 
-.filter-group label {
+.form-group label {
     font-size: 16px;
     font-weight: 700;
     line-height: calc(18px/16px);
@@ -963,7 +1214,7 @@ a .logo {
     color: #202020;
 }
 
-.filter-group {
+.form-group {
     font-size: 16px;
     font-weight: 400;
     line-height: calc(18px/16px);
@@ -1012,7 +1263,7 @@ input.gray {
     color: #202020;
 }
 
-.filter-group {
+.filter-groups {
     font-size: 16px;
     font-weight: 400;
     line-height: calc(20px/16px);
@@ -1028,7 +1279,8 @@ input.gray {
     color: #283136;
 }
 
-.btn-gray {
+.btn-gray,
+.page-gray {
     font-size: 16px;
     font-weight: 500;
     line-height: calc(18px/16px);
@@ -1061,8 +1313,6 @@ input.gray {
     font-style: normal;
     color: #444444;
 }
-
-
 
 a.gray {
     font-size: 16px;
