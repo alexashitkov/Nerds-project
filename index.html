@@ -21,13 +21,55 @@
             </nav>
         </div>
         <div class="slider">
+            
             <section class="slider-item slide1 clearfix">
                 <a name="phone"></a>
-                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона"> 
+                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона">             
                 <h1>Долго, дорого, скрупулёзно.</h1>
                 <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                <button class="btn btn-red">Узнать больше</button>
+                <button class="btn btn-red">Узнать больше</button>                                
                 <div class="links"> <!--Кнопки -->
+                    <a class="link link-active" href="#phone"></a>
+                    <a class="link" href="#desktop"></a>
+                    <a class="link" href="#tablet"></a>
+                </div>
+            </section>
+            <section class="slider-item slide2 clearfix">
+                <a name="desktop"></a>
+                <img src="picth\slide2.png" height="430" width="663" alt="Изображение монитора">                
+                <h1>Любим математику как никто другой</h1>
+                <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
+                <button class="btn btn-red">Узнать больше</button>                                
+                <div class="links"> <!--Кнопки -->
+                    <a class="link" href="#phone"></a>
+                    <a class="link link-active" href="#desktop"></a>
+                    <a class="link" href="#tablet"></a>
+                </div>
+            </section>
+            <section class="slider-item slide3 clearfix">
+                <a name="tablet"></a>               
+                <img src="picth\slide3.png" height="411" width="759" alt="Изображение планшета">                
+                <h1>Только ночь, только хардкор</h1>
+                <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <button class="btn btn-red">Узнать больше</button>                                               
+                <div class="links"> <!--Кнопки -->
+                    <a class="link" href="#phone"></a>
+                    <a class="link" href="#desktop"></a>
+                    <a class="link link-active" href="#tablet"></a>
+                </div>
+            </section>           
+        </div>
+        <!--<div class="slider">    Вариант с дивами не получается !!!!!!!!!!!!!!!!!!!!!!!!!
+            <section class="slider-item slide1 clearfix">
+                <a name="phone"></a>
+                
+                <div class="slogan1"> 
+                    <h1>Долго, дорого, скрупулёзно.</h1>
+                    <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                    <button class="btn btn-red">Узнать больше</button>
+                </div>
+                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона">
+                <div class="links"> 
                     <a class="link active" href="#phone"></a>
                     <a class="link" href="#desktop"></a>
                     <a class="link" href="#tablet"></a>
@@ -35,11 +77,14 @@
             </section>
             <section class="slider-item slide2 clearfix">
                 <a name="desktop"></a>
+                
+                <div class="slogan2">
+                    <h1>Любим математику как никто другой</h1>
+                    <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
+                    <button class="btn btn-red">Узнать больше</button>
+                </div>
                 <img src="picth\slide2.png" height="430" width="663" alt="Изображение монитора">
-                <h1>Любим математику как никто другой</h1>
-                <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
-                <button class="btn btn-red">Узнать больше</button>
-                <div class="links"> <!--Кнопки -->
+                <div class="links"> 
                     <a class="link" href="#phone"></a>
                     <a class="link active" href="#desktop"></a>
                     <a class="link" href="#tablet"></a>
@@ -47,17 +92,20 @@
             </section>
             <section class="slider-item slide3 clearfix">
                 <a name="tablet"></a>
-                <img src="picth\slide3.png" height="411" width="759" alt="Изображение планшета">
-                <h1>Только ночь, только хардкор</h1>
-                <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <button class="btn btn-red">Узнать больше</button>                
-                <div class="links"> <!--Кнопки -->
+                
+                <div class="slogan3">
+                    <h1>Только ночь, только хардкор</h1>
+                    <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                    <button class="btn btn-red">Узнать больше</button>
+                </div>
+                <img src="picth\slide3.png" height="411" width="759" alt="Изображение планшета">               
+                <div class="links"> 
                     <a class="link" href="#phone"></a>
                     <a class="link" href="#desktop"></a>
                     <a class="link active" href="#tablet"></a>
                 </div>
             </section>           
-        </div>
+        </div>-->
     </header>
     <div class="main">
       <div class="wrapper">
@@ -118,10 +166,15 @@
             </div>
         </div>
         <div class="main-item development">
-            <img  class="work" src="img\logo-1.png" height="68" width="199" alt="">
-            <img  class="work" src="img\logo-2.png" height="87" width="209" alt="">
-            <img  class="work" src="img\logo-3.png" height="52" width="185" alt="">
-            <img  class="work" src="img\logo-4.png" height="84" width="173" alt="">
+            <div class="develop-item">
+                <img  class="work" src="img\logo-1.png" height="68" width="199" alt="">
+                <div class="band band-1"></div>
+                <img  class="work" src="img\logo-2.png" height="87" width="209" alt="">
+                <div class="band band-2"></div>
+                <img  class="work" src="img\logo-3.png" height="52" width="185" alt="">
+                <div class="band band-3"></div>
+                <img  class="work" src="img\logo-4.png" height="84" width="173" alt="">
+            </div>
         </div>
       </div>
       <div class="main-item scheme">
@@ -138,9 +191,9 @@
     </div>
     <footer class="footer clearfix">
         <div class="footer-social">
-            <a href=""><img class="social-btn social-btn-vk" src="img\vk-icon.png" height="" width="" alt="Иконка VK"></a>
-            <a href=""><img class="social-btn social-btn-fb" src="img\fb-icon.png" height="" width="" alt="Иконка FB"></a>
-            <a href=""><img class="social-btn social-btn-inst" src="img\inst-icon.png" height="" width="" alt="Иконка INST"></a>
+            <a href="vk.com"><img class="social-btn social-btn-vk" src="img\vk-icon.png" height="" width="" alt="Иконка VK"></a>
+            <a href="facebook.com"><img class="social-btn social-btn-fb" src="img\fb-icon.png" height="" width="" alt="Иконка FB"></a>
+            <a href="instagram.com"><img class="social-btn social-btn-inst" src="img\inst-icon.png" height="" width="" alt="Иконка INST"></a>
         </div>
         <div class="footer-discont">
             <h2>Давайте дружить, это выгодно!</h2>
@@ -149,8 +202,9 @@
     </footer>
     <form class="form-hidden clearfix"><!--Модальное окно -->
         <a name="modal"></a>
-        <button class="close"></button>
+        <button class="close"><img src="img\close-cross.png" alt="Закрыть"></button>
         <h3>Напишите нам</h3>
+        
         <div class="form-group">
             <div class="your-name">
                 <label for="">Ваше имя:</label>    

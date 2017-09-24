@@ -446,11 +446,13 @@
     display: none;
   }
 
+* {
+  box-sizing: border-box;
+}
 
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     width: 1440px;
     /*font-size: 16px;
     font-weight: ;
@@ -472,7 +474,7 @@ body {
   padding-right: 140px;  
 }
 
-.header h1 {
+.title {
   margin-left: 219px;
   margin-bottom: 116px;
 }
@@ -522,6 +524,56 @@ li.active,
 .basket img {
   margin-right: 20px;
 }
+
+
+/*            Вариант с дивами не получается!!!!!!!!!!!!!!!!!!!!!!!!!
+.slogan1,
+.slogan2,
+.slogan3 {
+  float: left;
+}
+
+.slider-item img {
+  float: left;
+}
+
+.slogan1 {
+  width: 379px;
+}
+
+.slogan2 {
+  width: 515.1px;
+}
+
+.slogan3 {
+  width: 409px;
+}
+
+.slide1 {
+  margin-right: 31px;
+  margin-top: 18px;
+}
+
+.slogan1 h1 {
+  margin-top: 67px;
+  
+}
+
+.slide2 {
+  margin-top: 1px;
+}
+
+.slogan2 h1 {
+  margin-top: 81px;
+}
+
+.slide3 {
+    margin-top: 19px;
+}
+
+.slogan3 h1 {
+  margin-top: 66px;
+}---*/
 
 .slider-item {
   outline: 1px solid green;
@@ -592,17 +644,17 @@ li.active,
 }
 
 .links {
-  width: 110px;
+  font-size: 0;
+  width: 100px;
   position: absolute;
-  right: 536px;
+  left: 536px;
   bottom: 96px;
-  
 }
 
 .link {
-  float: left;
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: #F7F6F4;
   margin-right: 17px;
@@ -611,6 +663,23 @@ li.active,
 .link:last-child {
   margin-right: 0;
 }
+
+.link-active {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F7F6F4;
+  border: 2px solid #333232;
+}
+/*      Не знаю как сделать наложение активную ссылку на CSS?
+.link-active::after {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+}*/
 
 .wrapper {
   padding-left: 140px;
@@ -680,7 +749,7 @@ li.active,
 }
 
 .warranty {
-  margin-left: 110px;
+  margin-left: 160px;
   margin-top: 42px;
 }
 
@@ -711,32 +780,44 @@ li.active,
 }
 
 .development {
-  display: inline-block;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 80px;
 }
 
+.develop-item {
+  font-size: 0;
+  height: 52px;
+  margin-left: 30px;
+
+}
+
 .work {
-  padding-right: 50px;
-  padding-left: 50px;
-  border-right: 2px solid #eeeeee;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.work:last-child {
-  padding-right: 0;
-  border-right: none;
+.band {
+  display: inline-block;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
 
-.work:first-child {
-  padding-left: 0;
+.band-1 {
+  margin: 0 45px;
 }
 
-.work:nth-child(3) {
-  margin-bottom: 20px;
+.band-2 {
+  margin: 0 50px;
 }
+
+.band-3 {
+  margin: 0 59px;
+}
+
 
 .form,
 .selector {
@@ -806,30 +887,30 @@ li.active,
 .sort h4 {
   padding: 0;
   margin: 0;
-  margin-right: 265px;
+  margin-right: 275px;
+}
+
+.sort button {
+  background-color: transparent;
+  border: none;
+}
+
+.sort button:focus {
+  outline: none;
 }
 
 .sort-icon {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 48px;
 }
 
 .sort-icon button {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .sort-icon button:last-child {
   margin-right: 0;
 }
-
-/*.sort-control {
-  padding: 0;
-  margin: 0;
-}
-
-.sort-control li {
-  list-style: none;
-}*/
 
 .catalog {
   font-size: 0;
@@ -853,18 +934,22 @@ li.active,
 }
 
 .hidden h3 {
-  display: inline-block;
   padding-top: 35px;
+  text-align: center;
+  
 }
 
 .hidden p {
-  width: 200px;
+  display: inline-block;
+  text-align: center;
+  max-width: 240px;
 }
 
 .hidden .btn-red {
   display: inline-block;
   width: 200px;
   height: 50px;
+  
 }
 
 .browser {
@@ -884,31 +969,45 @@ li.active,
   background: white;
 }
 
-
+/* Вариант 1 "Кнопки"  */
 .pagination {
-  /*margin-top: 60px;*/
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;  
 }
 
-.pagination ul {
-  margin: 0;
-  padding: 0;
-}
-
-.pagination li {
-  list-style: none;
-  float: left;
-}
 
 .page-gray {
-  display: inline-block;  
+  display: inline-block;
+  background: #eeeeee;
   text-decoration: none;
   width: 50px;
   height: 50px;
-  margin-right: 11px;
   text-align: center;
-  background: #eeeeee;
+  vertical-align: middle;
+  margin-right: 11px;
 }
+/*  Вариант 2 "Ссылки" не работает vertical-align: middle; не понимаю почему?
+.pagination ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.page-gray {
+  display: inline-block;
+  background: #eeeeee;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}*/
 
  .next {
   width: 260px;
@@ -927,14 +1026,13 @@ li.active,
 
 .map {
   height: 415px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .address {
   width: 319px;
   background: #ffffff;
   padding-left: 50px;
-  outline: 1px solid red;
   position: absolute;
   left: 140px;
   bottom: 50px;
@@ -982,11 +1080,12 @@ li.active,
   display: inline-block;
   vertical-align: middle;
   padding-right: 13px;
+  
 }
 
 .form-hidden {
-  width: 1039px;
-  height: 669px;
+  width: 960px;
+  height: 590px;
   padding-left: 100px;
   background: #ffffff;
   outline: 1px solid red;
@@ -994,15 +1093,14 @@ li.active,
 
 .close {
   float: right;
-  width: 20px;
-  height: 20px;
   margin-top: 78px;
   margin-right: 90px;
-  background: #000;
+  background: transparent;
+  border: none;
 }
 
 .form-hidden h3 {
-  margin-top: 70px;
+  margin-top: 73px;
   clear: both;
 }
 
