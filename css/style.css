@@ -471,7 +471,7 @@ body {
   outline: 1px solid red;
   background: #eeeeee;
   padding-left: 140px;
-  padding-right: 138px;  
+  padding-right: 140px;  
 }
 
 .title {
@@ -513,7 +513,7 @@ li.active,
 }
 
 .basket {
-   margin-left: 270px;
+   margin-left: 268px;
 }
 
 .nav .basket,
@@ -821,14 +821,14 @@ li.active,
 
 .form {
   float: left;
-  /*margin-top: 63px;*/
+  margin-top: 63px;
   margin-right: 140px;
   width: 260px;
 }
 
 .selector {
   float: left;
-  /*margin-top: 60px;*/
+  margin-top: 60px;
   
   width: 760px;
 }
