@@ -452,13 +452,7 @@
 
 
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 1440px;
-    /*font-size: 16px;
-    font-weight: ;
-    line-height: calc();
-    font-style:
-    color: #;*/ 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;    
 }
 
 .clearfix::after { 
@@ -467,11 +461,16 @@ body {
   display: table;
 }
 .header {
+  width: 100%;
   min-height: 355px;
-  outline: 1px solid red;
-  background: #eeeeee;
-  padding-left: 140px;
-  padding-right: 140px;  
+  background-color: #eeeeee;
+    
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+   
 }
 
 .title {
@@ -483,6 +482,7 @@ body {
   float: left;
   margin-top: 49px;
   margin-right: 200px;
+  
 }
 
 .top-menu .nav {
@@ -492,15 +492,14 @@ body {
 }
 
 .nav ul {
-  font-size: 0;
-  margin-bottom: 18px; 
-  margin: 0;
+  font-size: 0; 
+  margin: 0 0 18px 0;
   padding: 0;
 }
 
 .nav li{
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 li.active,
@@ -525,8 +524,6 @@ li.active,
   margin-right: 20px;
 }
 
-
-/*            Вариант с дивами не получается!!!!!!!!!!!!!!!!!!!!!!!!!
 .slogan1,
 .slogan2,
 .slogan3 {
@@ -542,55 +539,24 @@ li.active,
 }
 
 .slogan2 {
-  width: 515.1px;
+  width: 490px;
 }
 
 .slogan3 {
-  width: 409px;
+  width: 400px;
 }
 
-.slide1 {
+.slide1 img{
   margin-right: 31px;
   margin-top: 18px;
-}
-
-.slogan1 h1 {
-  margin-top: 67px;
-  
 }
 
 .slide2 {
   margin-top: 1px;
 }
 
-.slogan2 h1 {
-  margin-top: 81px;
-}
-
 .slide3 {
     margin-top: 19px;
-}
-
-.slogan3 h1 {
-  margin-top: 66px;
-}*/
-
-.slider-item {
-  outline: 1px solid green;
-  padding: 0;
-  position: relative;
-}
-
-.slider-item img {
-  float: right;
-}
-
-.slider-item h1 {
-  margin-bottom: 30px;
-}
-
-.slider-item p {
-  margin-bottom: 40px;
 }
 
 .slider-item .btn-red {
@@ -600,63 +566,38 @@ li.active,
   margin-bottom: 80px;
 }
 
-.slide1 img {
-   margin-right: 31px;
-}
-
-.slide2 img {
-  position: absolute;
-  bottom: 18px;
-  right: 0;
-}
-
-.slide3 img {
-  position: absolute;
-  right: 0;
-  
-}
-
 .slide1 h1 {
   padding-top: 67px;
-  width: 420px;  
+   
 }
 
 .slide2 h1 {
   padding-top: 81px;
-  width: 520px;    
+     
 }
 
 .slide3 h1 {
   padding-top: 66px;
-  width: 410px;
+  
 }
 
-.slide1 p {
-  width: 400px;
-}
 
-.slide2 p {
-  width: 410px;
-}
 
-.slide3 p {
-  width: 350px;
+.slider {
+  position: relative;
 }
 
 .links {
   font-size: 0;
   width: 100px;
   position: absolute;
-  left: 536px;
+  left: 50%;
   bottom: 96px;
+  margin-left: -50px;
 }
 
 .link {
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #F7F6F4;
   margin-right: 17px;
 }
 
@@ -664,25 +605,63 @@ li.active,
   margin-right: 0;
 }
 
-.link-active {
+.slider-item input {
+  display: none;
+}
+
+.link label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
-  background: #F7F6F4;
-  border: 2px solid #333232;
+  background-color: #ffffff;
+  border-radius: 50%; 
 }
-/*      Не знаю как сделать наложение активную ссылку на CSS?
-.link-active::after {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
+
+.slider-item input:checked + .link label::before {
+  content: "";
+  position: absolute;
+  top: 4.8px;
+  left: 4.8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: red;
-}*/
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  z-index: 1;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slide1 {
+  display: block;
+}
+
+#a:checked ~ .slider .slide1 {
+  display: block;
+}
+
+#b:checked ~ .slider .slide2 {
+  display: block;
+}
+
+#c:checked ~ .slider .slide3 {
+  display: block;
+}
 
 .wrapper {
-  padding-left: 140px;
+  margin: 0 auto;
+  padding-left: 50px;
+}
+
+.creation {
+  width: 1100px;
+  
 }
 
 .websites,
@@ -880,6 +859,38 @@ li.active,
   margin-top: 25px;
 }
 
+.filter-group input {
+  display: none;
+}
+
+.filter-group label {
+  position: relative;
+  padding-left: 36px;
+}
+
+.radio:nth-child(n+2) label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #202020;
+}
+
+.radio:nth-child(n+2) input:checked + .radio:nth-child(n+2) label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #202020;
+  z-index: 1;
+}
+
 .form .btn-gray {
   width: 260px;
   height: 50px;
@@ -949,6 +960,12 @@ li.active,
   position: absolute;
   right: 0; 
   bottom: 0;
+  display: none;
+}
+
+.catalog-item a:hover ~ .hidden {
+  display: inline-block;
+  z-index: 1;
 }
 
 .hidden h3 {
@@ -1092,6 +1109,7 @@ li.active,
 }
 
 .form-hidden {
+  display: none;
   width: 960px;
   height: 590px;
   padding-left: 100px;
