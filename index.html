@@ -9,7 +9,7 @@
 <body>
     <header class="header gray">
       <div class="container">
-        <div class="top-menu clearfix">
+        <div class="top-menu ">
             <a href="index.html"> <img class="logo" src="img\Nerds-logo.png" height="65" width="160" alt="Логотип"></a>
             <nav class="nav">
                 <ul>
@@ -21,51 +21,50 @@
                 </ul>
             </nav>
         </div>
-        <div class="slider">   
-            <div class="links">
-                <div  class="link">
-                    <label for="a">1</label>
-                </div>
-                <div  class="link">
-                    <label for="b">2</label>
-                </div> 
-                <div  class="link">
-                    <label for="c">3</label>                                                                                                                                                                                                                                                                                               
-                </div>
-            </div>    
-            <section class="slider-item slide1 clearfix">
-                <input type="radio" id="a">                                             
+        <div class="slider">
+            <input type="radio" id="a" name="rd" checked>
+            <input type="radio" id="b" name="rd">
+            <input type="radio" id="c" name="rd">             
+            <div class="slides">    
+              <section class="slider-item slide1">                                                             
                 <div class="slogan1"> 
                     <h1>Долго, дорого, скрупулёзно.</h1>
                     <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                     <button class="btn btn-red">Узнать больше</button>
                 </div>
-                <img src="picth\slide1.png" height="413" width="698" alt="Изображение телефона">                
-            </section>
-            <section class="slider-item slide2 clearfix">
-                <input type="radio" id="b">                                               
+                <div class="images" alt="Изображение телефона">
+                </div>                                   
+              </section>
+              <section class="slider-item slide2 ">                                                              
                 <div class="slogan2">
                     <h1>Любим математику как никто другой</h1>
                     <p>Никакого креатива, только математически формулы для расчёта идеальных пропорций.</p>
                     <button class="btn btn-red">Узнать больше</button>
-                </div>    
-                <img src="picth\slide2.png" height="430" width="663" alt="Изображение монитора">                
-            </section>
-            <section class="slider-item slide3 clearfix">
-                <input type="radio" id="c">                                                
+                </div>
+                <div class="images" alt="Изображение монитора">
+                </div>                    
+              </section>
+              <section class="slider-item slide3 ">                                                               
                 <div class="slogan3">
                     <h1>Только ночь, только хардкор</h1>
                     <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <button class="btn btn-red">Узнать больше</button>
                 </div>
-                <img src="picth\slide3.png" height="411" width="759" alt="Изображение планшета">                                              
-            </section>         
-        </div>
+                <div class="images" alt="Изображение планшета">                    
+                </div>                                           
+              </section>
+            </div>
+            <div class="control">
+                <label for="a"></label>
+                <label for="b"></label>
+                <label for="c"></label>    
+            </div>               
+        </div>                                  
       </div>
     </header>
     <div class="main">
       <div class="wrapper">
-        <div class="main-item creation clearfix">
+        <div class="main-item creation ">
             <section class="websites">
                 <img src="picth\ilustration-1.jpg" height="146" width="300" alt="Веб сайты">
                 <h3>Веб-сайты</h3>
@@ -85,7 +84,7 @@
                 <button class="btn btn-yellow">Заказать</button>
             </section>
         </div>
-        <div class="main-item opportunities clearfix">
+        <div class="main-item opportunities ">
             <div class="desc">
                 <h2>Мы- маленькая, но гордая дизайн-студия из Краснодара.</h2>
                 <p>Исповедуем принцип минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -145,7 +144,7 @@
             </div>
       </div>       
     </div>
-    <footer class="footer clearfix">
+    <footer class="footer ">
         <div class="footer-social">
             <a href="vk.com"><img class="social-btn social-btn-vk" src="img\vk-icon.png" height="" width="" alt="Иконка VK"></a>
             <a href="facebook.com"><img class="social-btn social-btn-fb" src="img\fb-icon.png" height="" width="" alt="Иконка FB"></a>
@@ -156,11 +155,10 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <form class="form-hidden clearfix"><!--Модальное окно -->
+    <form class="form-hidden "><!--clearfix--Модальное окно -->
         <a name="modal"></a>
         <button class="close"><img src="img\close-cross.png" alt="Закрыть"></button>
-        <h3>Напишите нам</h3>
-        
+        <h3>Напишите нам</h3>        
         <div class="form-group">
             <div class="your-name">
                 <label for="">Ваше имя:</label>    
@@ -177,6 +175,5 @@
         </div>
         <button class="btn btn-red">Отправить</button>
     </form>
-
 </body>
 </html>   

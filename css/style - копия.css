@@ -478,28 +478,27 @@ body {
   margin-bottom: 116px;
 }
 
-.top-menu {
-  display: flex;
-}
-
-.top-menu .logo { 
+.top-menu .logo {
+  float: left;
   margin-top: 49px;
   margin-right: 200px;
   
 }
 
-.top-menu .nav { 
+.top-menu .nav {
+  float: left;
   margin-top: 83px;
+
 }
 
 .nav ul {
-  display: flex;
+  font-size: 0; 
   margin: 0 0 18px 0;
   padding: 0;
 }
 
 .nav li{
-  list-style: none;
+  display: inline-block;
   margin-right: 35px;
 }
 
@@ -525,78 +524,73 @@ li.active,
   margin-right: 20px;
 }
 
-.slider-item {
-  display: flex;
+.slogan1,
+.slogan2,
+.slogan3 {
+  float: left;
+}
+
+.slider-item img {
+  float: left;
 }
 
 .slogan1 {
   width: 379px;
-  margin-right: 50px;
 }
 
 .slogan2 {
-  width: 530px;
+  width: 490px;
 }
 
 .slogan3 {
-  width: 410px;
+  width: 400px;
 }
 
-.slide1 .images {
-  height: 413px;
-  width: 698px;
-  background-image: url("../picth/slide1.png")
-}
-
-.slide2 .images {
-  height: 430px;
-  width: 663px;
-  background-image: url("../picth/slide2.png")
-}
-
-.slide3 .images {
-  height: 411px;
-  width: 759px;
-  background-image: url("../picth/slide3.png")
-}
-
-.slide1 {
-  margin-top: 19px;
+.slide1 img{
+  margin-right: 31px;
+  margin-top: 18px;
 }
 
 .slide2 {
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .slide3 {
-    margin-top: 20px;
+    margin-top: 19px;
 }
 
 .slider-item .btn-red {
   display: block;
   width: 240px;
   height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .slide1 h1 {
-  padding-top: 50px;
+  padding-top: 67px;
    
 }
 
 .slide2 h1 {
-  padding-top: 64px;
+  padding-top: 81px;
      
 }
 
 .slide3 h1 {
-  padding-top: 49px;
+  padding-top: 66px;
+  
 }
 
-.slogan1 p,
-.slogan2 p,
-.slogan3 p {
-  margin-bottom: 40px;
+
+
+
+.link {
+  display: inline-block;
+  margin-right: 17px;
+}
+
+.link:last-child {
+  margin-right: 0;
 }
 
 .slider {
@@ -607,37 +601,33 @@ li.active,
   display: none;
 }
 
-.control {
+.slider-item {
+  position: relative;
+  display: none;
+}
+
+.slider .control {
   position: absolute;
   left: 50%;
   margin-left: -50px;
   bottom: 96px;
 }
 
-.slide1,
-.slide2,
-.slide3 {
- display: none;
-}
-
-.control label {
-  position: relative;
-  margin-right: 35px;  
-}
-
-
-.slider label::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.slider label {
+  display: inline-block;
   width: 17px;
   height: 17px;
   border-radius: 50%;
   background-color: #ffffff;
+  position: relative;
+  margin-right: 17px;  
 }
 
-#a:checked ~ .control label[for="a"]::after {
+.slide1 {
+  display: block;
+}
+
+.slider label::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -646,43 +636,28 @@ li.active,
   height: 5px;
   border: 2px solid #A6A6A6;
   border-radius: 50%;
-  display: inline-block; 
+  display: inline-block;
+  opacity: 0; 
 }
 
-#b:checked ~ .control label[for="b"]::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 5px;
-  height: 5px;
-  border: 2px solid #A6A6A6;
-  border-radius: 50%;
-  display: inline-block; 
+/*#a:checked ~ .slider label:nth-of-type(1),
+#b:checked ~ .slider label:nth-of-type(2),
+#c:checked ~ .s label:nth-of-type(3) {
+  background-image: url("../img/active-button.png");
+  z-index: 1;
+}*/
+
+.control #a:checked ~ .control label:nth-of-type(1),
+.control #b:checked ~ .control label:nth-of-type(2),
+.control #c:checked ~ .control label:nth-of-type(3) {
+  opacity: 1;
+  z-index: 1;
 }
 
-#c:checked ~ .control label[for="c"]::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 5px;
-  height: 5px;
-  border: 2px solid #A6A6A6;
-  border-radius: 50%;
-  display: inline-block; 
-}
-
- #a:checked ~ .slides .slide1 {
-  display: flex;
-}
-
-#b:checked ~ .slides .slide2 {
-  display: flex;
-}
-
-#c:checked ~ .slides .slide3{
-  display: flex;
+.control #a:checked ~ .slider .slide1,
+.control #b:checked ~ .slider .slide2,
+.control #c:checked ~ .slider .slide3 {
+  display: block;
 }
 
 .wrapper {
@@ -692,16 +667,13 @@ li.active,
 
 .creation {
   width: 1100px;
-}
-
-.main-item {
-  display: flex;
+  
 }
 
 .websites,
 .application,
 .presentation {
-  
+  float: left;
   margin-right: 100px;
   margin-top: 80px;
 }
@@ -727,6 +699,11 @@ li.active,
 
 .opportunities {
   margin-bottom: 80px;
+}
+
+.desc,
+.warranty {
+  float: left;
 }
 
 .desc h2 {
@@ -796,17 +773,19 @@ li.active,
 }
 
 .develop-item {
-  display: flex;
+  font-size: 0;
   height: 52px;
   margin-left: 30px;
 
 }
 
-.work { 
+.work {
+  display: inline-block;
   vertical-align: top;
 }
 
 .band {
+  display: inline-block;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
@@ -824,22 +803,16 @@ li.active,
   margin: 0 59px;
 }
 
-.wrap {
-  display: flex;
-  margin: 0 auto;
-  padding-left: 50px;
-}
 
 .form {
-  
+  float: left;
   margin-top: 63px;
   margin-right: 140px;
   width: 260px;
 }
 
 .selector {
-  display: flex;
-  flex-direction: column;
+  float: left;
   margin-top: 60px;
   
   width: 760px;
@@ -854,7 +827,6 @@ li.active,
 
 .range {
   font-size: 0;
-  
 }
 
 .maxi,
@@ -1028,14 +1000,12 @@ li.active,
 
 .sort {
   font-size: 0;
-  
 }
 
 .sort h4,
 .sort-control,
-.sort-icon button {
+.sort-icon  button {
   display: inline-block;
-
 }
 
 .sort h4 {
@@ -1045,6 +1015,7 @@ li.active,
 .sort button {
   background-color: transparent;
   border: none;
+  
   text-transform: uppercase;
 }
 
@@ -1066,13 +1037,13 @@ li.active,
 }
 
 .catalog {
-  display: flex;
-  flex-flow: row wrap;
+  font-size: 0;
   width: 760px;
   margin-top: 50px;
 }
 
 .catalog-item {
+  display: inline-block;
   margin-right: 40px;
   margin-bottom: 33px;
   position: relative;
@@ -1093,8 +1064,9 @@ li.active,
   display: none;
 }
 
-.catalog-item :focus ~ .hidden {
-  display: block;
+.catalog-item a:hover ~ .hidden {
+  display: inline-block;
+  z-index: 1;
 }
 
 .hidden h3 {
@@ -1125,11 +1097,8 @@ li.active,
   background: #202020;
 }
 
-.circles {
-  display: flex;
-} 
-
 .round {
+  float: left;
   margin-left: 8px;
   margin-top: 12px;
   width: 16px;
@@ -1145,12 +1114,13 @@ li.active,
 
 
 .pagination ul {
-  display: flex;
+  font-size: 0;
   padding: 0;
   margin:0;
 }
 
 .pagination li {
+  display: inline-block;
   margin-right: 11px;
   list-style: none;
 }
@@ -1213,16 +1183,14 @@ li.active,
   height: 50px;
 }
 
-.footer {
-  display: flex;
-}
-
-.footer-social { 
+.footer-social {
+  float: left;
   margin-top: 69px;
   margin-left: 144px;
 }
 
-.footer-discont { 
+.footer-discont {
+  float: left;
   margin-left: 140px;
 }
 
@@ -1265,8 +1233,6 @@ li.active,
 
 .form-group {
   overflow: hidden;
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .your-name {
@@ -1275,11 +1241,13 @@ li.active,
 
 .mail,
 .your-name {
+  float: left;
   width: 361px;
   margin-bottom: 40px;
 }
 
 .letter {
+  float: left;
   width: 761px;
   
 }
