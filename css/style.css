@@ -696,6 +696,7 @@ li.active,
 
 .main-item {
   display: flex;
+  width: 100%;
 }
 
 .websites,
@@ -1214,6 +1215,7 @@ li.active,
 }
 
 .footer {
+  margin: 0 auto;
   display: flex;
 }
 
