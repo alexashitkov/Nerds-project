@@ -460,17 +460,16 @@ body {
   clear: both; 
   display: table;
 }
+
+.container {
+  width: 1160px;
+  margin: 0 auto;   
+}
+
 .header {
   width: 100%;
   min-height: 355px;
   background-color: #eeeeee;
-    
-}
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-   
 }
 
 .title {
@@ -485,7 +484,6 @@ body {
 .top-menu .logo { 
   margin-top: 49px;
   margin-right: 200px;
-  
 }
 
 .top-menu .nav { 
@@ -1244,12 +1242,20 @@ li.active,
 }
 
 .form-hidden {
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  margin-left: -480px;
   display: none;
   width: 960px;
   height: 590px;
   padding-left: 100px;
-  background: #ffffff;
-  outline: 1px solid red;
+  background: #eeeeee;
+  z-index: 1;
+}
+
+.open{
+  display: block;
 }
 
 .close {

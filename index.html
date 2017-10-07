@@ -140,11 +140,30 @@
                 <h4>NERDS DESIGN STUDIO</h4>
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
-                <button class="btn btn-red" href="#modal" >Напишите нам</button>
+                <button class="btn btn-red unblock">Напишите нам</button>
             </div>
+            <form class="form-hidden"><!--Модальное окно -->
+                <button class="close"><img src="img\close-cross.png" alt="Закрыть"></button>
+                <h3>Напишите нам</h3>        
+                <div class="form-group">
+                    <div class="your-name">
+                        <label for="">Ваше имя:</label>    
+                        <input type="text" placeholder="Представтесь, пожалуйста">
+                    </div>
+                    <div class="mail">
+                        <label for="">Ваш e-mail:</label>
+                        <input type="e-mail" placeholder="Для отправки ответа">
+                    </div>
+                    <div class="letter">
+                        <label for="">Текст письма:</label>
+                        <input type="textaria" placeholder="В свободной форме">
+                    </div>
+                </div>
+                <button class="btn btn-red">Отправить</button>
+            </form>
       </div>       
     </div>
-    <footer class="footer ">
+    <footer class="footer">
         <div class="footer-social">
             <a href="vk.com"><img class="social-btn social-btn-vk" src="img\vk-icon.png" height="" width="" alt="Иконка VK"></a>
             <a href="facebook.com"><img class="social-btn social-btn-fb" src="img\fb-icon.png" height="" width="" alt="Иконка FB"></a>
@@ -155,25 +174,6 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <form class="form-hidden "><!--clearfix--Модальное окно -->
-        <a name="modal"></a>
-        <button class="close"><img src="img\close-cross.png" alt="Закрыть"></button>
-        <h3>Напишите нам</h3>        
-        <div class="form-group">
-            <div class="your-name">
-                <label for="">Ваше имя:</label>    
-                <input type="text" placeholder="Представтесь, пожалуйста">
-            </div>
-            <div class="mail">
-                <label for="">Ваш e-mail:</label>
-                <input type="e-mail" placeholder="Для отправки ответа">
-            </div>
-            <div class="letter">
-                <label for="">Текст письма:</label>
-                <input type="textaria" placeholder="В свободной форме">
-            </div>
-        </div>
-        <button class="btn btn-red">Отправить</button>
-    </form>
+    <script src="js/script.js"></script>
 </body>
 </html>   
