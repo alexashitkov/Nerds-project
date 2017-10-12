@@ -141,26 +141,26 @@
                 <p>191186, Санкт-Петербург, ул.Б.Конюшенная д. 19/8</p>
                 <a href="tel:+7(812) 275 75 75">тел.+7(812) 275 75 75</a>
                 <button class="btn btn-red unblock">Напишите нам</button>
-            </div>
-            <form class="form-hidden"><!--Модальное окно -->
+            </div>                
+            <form class="form-hidden"><!--Модальное окно -->     
                 <button class="close"><img src="img\close-cross.png" alt="Закрыть"></button>
-                <h3>Напишите нам</h3>        
+                <h3>Напишите нам</h3>       
                 <div class="form-group">
                     <div class="your-name">
                         <label for="">Ваше имя:</label>    
-                        <input type="text" placeholder="Представтесь, пожалуйста">
+                        <input type="text" name="login" required placeholder="Представтесь, пожалуйста">
                     </div>
                     <div class="mail">
                         <label for="">Ваш e-mail:</label>
-                        <input type="e-mail" placeholder="Для отправки ответа">
+                        <input type="e-mail" name="mail" required placeholder="Для отправки ответа">
                     </div>
                     <div class="letter">
                         <label for="">Текст письма:</label>
-                        <input type="textaria" placeholder="В свободной форме">
+                        <input type="textaria" name="message" required placeholder="В свободной форме">
                     </div>
                 </div>
-                <button class="btn btn-red">Отправить</button>
-            </form>
+                 <button class="btn btn-red submit" type="submit" >Отправить</button>
+            </form>        
       </div>       
     </div>
     <footer class="footer">
